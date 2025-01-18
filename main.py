@@ -45,7 +45,7 @@ def insertion_sort(list_to_sort: list[int]) -> list[int]:
         middle: list[int] = [n for n in list_to_sort if n == element]
         right: list[int] = [n for n in list_to_sort if n > element]
 
-    return left + middle + right
+    return [*left, *middle, *right]
 
 
 if __name__ == '__main__':
